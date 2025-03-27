@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Simon Says</title>
+</head>
+<body>
+    <h1>Simon Game</h1>
+    <h4>Press any key to start the game</h4>
+     <div class="btn-container">
+        <div class="btn red" type="button" id="red"></div>
+        <div class="btn yellow" type="button" id="yellow"></div>
+        <div class="btn green" type="button" id="green"></div>
+        <div class="btn purple" type="button" id="purple"></div>
+     </div>
+     <div class="rules-container">
+        <h1>Simon Plays - Rules</h1>
+        <ol class="rules-list">
+            <li>The computer will flash a random colored box.</li>
+            <li>The player must click the same box that the computer flashed.</li>
+            <li>If correct, the computer adds another flash to the sequence.</li>
+            <li>The player must repeat the entire sequence in the correct order.</li>
+            <li>If the player clicks the wrong box, the game is over.</li>
+        </ol>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>

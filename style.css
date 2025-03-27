@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+     background: linear-gradient(135deg, #1E90FF, #00BFFF, #87CEFA);
+    background-size: 400% 400%;
+    animation: shine 5s infinite linear;
+}
+@keyframes shine {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border:5px solid black;
+    margin: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn-container{
+    display:flex;
+    justify-content: center;
+    width:500px;
+    height: 500px;;
+    flex-wrap: wrap;
+    margin:0px auto;
+}
+.rules-container{
+    width:500px;
+    margin: 0px auto;
+    border: 5px solid red ;
+    background-color: pink;
+    border-radius: 2rem;
+
+}
+.rules-list{
+    text-align: left;
+
+}
+.red{
+    background-color: rgb(167, 31, 31);
+}
+
+.yellow{
+    background-color: rgb(244, 244, 91);
+}
+.purple{
+    background-color: rgb(198, 70, 198);
+}
+.green{
+    background-color: rgb(66, 201, 66);
+}
+.flash{
+    background-color: white;
+}
+.userFlash{
+    background-color: black;
+
+}
