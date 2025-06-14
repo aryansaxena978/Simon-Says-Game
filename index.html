@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Simon Says</title>
 </head>
 <body>
-    <h1>Simon Game</h1>
-    <h4>Press any key to start the game</h4>
-     <div class="btn-container">
-        <div class="btn red" type="button" id="red"></div>
-        <div class="btn yellow" type="button" id="yellow"></div>
-        <div class="btn green" type="button" id="green"></div>
-        <div class="btn purple" type="button" id="purple"></div>
-     </div>
-     <div class="rules-container">
-        <h1>Simon Plays - Rules</h1>
-        <ol class="rules-list">
-            <li>The computer will flash a random colored box.</li>
-            <li>The player must click the same box that the computer flashed.</li>
-            <li>If correct, the computer adds another flash to the sequence.</li>
-            <li>The player must repeat the entire sequence in the correct order.</li>
-            <li>If the player clicks the wrong box, the game is over.</li>
-        </ol>
+    <div class="game-container">
+        <div class="header">
+            <h1>Simon Game</h1>
+            <div class="score-display">
+                <h4 id="level-display">Press any key to start</h4>
+                <div class="score">Score: <span id="score">0</span></div>
+            </div>
+        </div>
+        
+        <div class="btn-container">
+            <div class="btn red" type="button" id="red" data-sound="red"></div>
+            <div class="btn yellow" type="button" id="yellow" data-sound="yellow"></div>
+            <div class="btn green" type="button" id="green" data-sound="green"></div>
+            <div class="btn purple" type="button" id="purple" data-sound="purple"></div>
+        </div>
+        
+        <div class="controls">
+            <button class="start-btn">Start Game</button>
+            <button class="reset-btn">Reset</button>
+        </div>
+        
+        <div class="rules-container">
+            <h2>How to Play</h2>
+            <ol class="rules-list">
+                <li>Press any key or click Start to begin</li>
+                <li>Watch the sequence of flashing colors</li>
+                <li>Repeat the sequence by clicking the colors</li>
+                <li>Each level adds one more step to the sequence</li>
+                <li>Get as far as you can!</li>
+            </ol>
+        </div>
     </div>
+    
+    <audio id="red-sound" src="https://www.soundjay.com/buttons/sounds/button-09.mp3"></audio>
+    <audio id="yellow-sound" src="https://www.soundjay.com/buttons/sounds/button-10.mp3"></audio>
+    <audio id="green-sound" src="https://www.soundjay.com/buttons/sounds/button-21.mp3"></audio>
+    <audio id="purple-sound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+    <audio id="gameover-sound" src="https://www.soundjay.com/buttons/sounds/button-08.mp3"></audio>
+    <audio id="levelup-sound" src="https://www.soundjay.com/buttons/sounds/button-03.mp3"></audio>
+    
     <script src="app.js"></script>
 </body>
 </html>
